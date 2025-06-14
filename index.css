@@ -146,9 +146,9 @@ a{
     p{
         text-align: center;
         color: #8591a9;
-        font-family: 'Segoe UI', serif;
+        font-family: 'Poppins', sans-serif;        
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 500;
     }
 
 
@@ -637,7 +637,7 @@ a{
         .projs{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 4rem; 
+            grid-gap: 4rem;
 
             .proj{
                 transition: 0.3s ease-in-out;
