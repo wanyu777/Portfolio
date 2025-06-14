@@ -924,10 +924,16 @@ footer{
 
     .about{
         padding: 1rem;
-    }
 
-    .about_info{
-        padding: 0rem;
+        .about_text{
+            p{
+                width: 80%;
+            }
+        }
+        
+        .about_info{
+            padding: 0rem;
+        }
     }
 }
 @media screen and (max-width: 1000px){
