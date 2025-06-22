@@ -846,10 +846,8 @@ a{
 .contact{
     padding: 4rem;
     margin: 10rem 10rem 0 10rem;
-    /* background: var(--ebony); */
     background: linear-gradient(to right, #1a2040, #482768);
     border: 1px solid #482768;
-    /* border: 1px solid var(--curious-blue); */
     border-radius: 1rem;
 
     h2{
@@ -872,7 +870,7 @@ a{
         p{
             color: #8591a9;
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
         }
     }
 
