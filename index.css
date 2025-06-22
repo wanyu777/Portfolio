@@ -100,8 +100,9 @@ a{
     .touch{
         border: 1px solid white;
         transition: 0.5s ease-in-out;
-        color: aqua;
-        background-color: white;
+        color: rgb(6, 176, 176);
+        background-color: #ffffff;
+        /* opacity: 0.9; */
     }
 }
 
@@ -139,10 +140,12 @@ a{
         background: linear-gradient(to right, var(--royal-blue), var(--affair));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-align: center;
     }
 
     .field{
         font-size: 0.8rem;
+        text-align: center;
     }
 
     p{
@@ -666,6 +669,8 @@ a{
                         border: 1px solid aqua;
                         border-radius: 1.5rem;
                         background: var(--jacarta);
+                        text-align: center;
+                        /* white-space: nowrap; */
 
                     }
                 }
@@ -711,7 +716,7 @@ a{
                     background: 
                     #ffffff;
                     padding: 0.6rem;
-                    border: aqua;
+                    border: 1px solid #ffffff;
                     border-radius: 0.3rem;
                 }
 
@@ -900,11 +905,12 @@ a{
 
         span{
             
-            background-color: aqua;
+            background-color: rgb(6, 176, 176);
             mask-image: url(./icons/linkedin.png);
             mask-size: cover;
             mask-repeat: no-repeat;
         }
+
     }
 }
 
@@ -920,60 +926,6 @@ footer{
     padding: 2rem;
 }
 
-@media screen  and (max-width: 440px) {
-
-    .about{
-        padding: 1rem;
-
-        .abt{
-            
-        }
-
-        .about_text{
-            width: 10rem;
-            p{
-                width: 100%;
-                /* text-wrap: wrap; */
-                font-size: 0.8rem;
-            }
-        }
-        
-        .about_info{
-            padding: 0rem;
-        }
-    }
-}
-
-@media screen and (max-width: 780px){
-    header{
-        
-        nav{
-            display: none;
-        }
-    }
-
-    .about{
-        padding: 1rem;
-
-        .about_me{
-            padding: 0.2rem;
-
-            .abt{
-                /* padding: 0.2rem; */
-            }
-        }
-
-        .about_text{
-            p{
-                width: 20rem;
-            }
-        }
-        
-        .about_info{
-            padding: 0rem;
-        }
-    }
-}
 @media screen and (max-width: 1000px){
 
     .about{
@@ -982,9 +934,7 @@ footer{
         .abt{
             flex-direction: column;
             gap: 1rem;
-            /* align-items: start; */
-            padding: 0;
-            margin: 0;
+            padding: 1rem;
         }
 
         .about_text{
@@ -1015,24 +965,6 @@ footer{
 
     .logo{
         margin-bottom: 1rem;
-    }
-
-    .featured{
-
-        .projs{
-
-            .proj{
-
-                .name{
-
-                    span{
-                        width: 8rem;
-                    }
-                }
-
-
-            }
-        }
     }
 
     .contact{
@@ -1077,4 +1009,160 @@ footer{
         padding: 2rem;
     }
     
+}
+
+@media screen and (max-width: 780px){
+    header{
+        
+        nav{
+            display: none;
+        }
+    }
+
+    .about{
+        padding: 1rem;
+
+        .about_me{
+            padding: 0.2rem;
+        }
+        
+        .about_info{
+            padding: 0rem;
+        }
+    }
+}
+
+@media screen  and (max-width: 745px){
+    .skills{
+
+        .tech1{
+            padding: 2rem 0;
+        }
+    }
+
+}
+
+@media screen  and (max-width: 568px){
+         .about{
+        .about_me{
+            .abt{                
+                .about_text{
+                    p{
+                        width: 15rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen  and (max-width: 515px){
+        .projects{
+
+        .featured{
+            padding: 2rem;
+
+            .projs{
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-gap: 1rem;
+            }
+        }
+    }
+
+    .experience{
+        .exps{
+            padding: 2rem;
+
+            .exp{
+                .exp1{
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen  and (max-width: 456px){
+    .contact{
+        .work-touch{
+            flex-direction: column;
+
+            .touch{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen  and (max-width: 450px) {
+
+    .about{
+        padding: 1rem;
+
+        .about_me{
+            .abt{
+
+                .about_text{
+                    width: 10rem;
+                    p{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        
+        .about_info{
+            padding: 0rem;
+        }
+    }
+
+    .skills{
+        padding: 0.5rem;
+
+        .tech{
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 1rem;
+        }
+
+        .tech1{
+            padding: 0.8rem;
+            .devname{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .projects{
+
+        .name{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .featured{
+            padding: 1rem;
+                .projs{
+                    .proj{
+                        padding: 0.5rem;
+            }
+                }
+            
+        }
+    }
+
+    .experience{
+        .exps{
+            padding: 1rem;
+            .exp{
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-gap: 1rem;
+
+                .exp-name{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
 }
